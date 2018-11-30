@@ -1,31 +1,4 @@
-
-:root {
-  --bg-color: #c2f1f5; 
-  --bg-bar-color: #4666f8;
-  --bg-chart-color:#4a4d5a;
-}
-
-
-
-.Container{
-  padding: 50px;
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align:center;
-  margin-left:auto; 
-  margin-right:auto;
-
-}
-
-body{
-    margin: 0;
-    background-color: var(--bg-color);
-    display: flex;
-    justify-content: center;
-    
-  }
-  
-  [class*="bar"]{
+[class*="bar"]{
   
     border-radius: 5px 5px 0 0;
     background: var(--bg-bar-color);
@@ -40,8 +13,12 @@ body{
 
   [class*="bar"]:hover{
     color: white;
-    /* width: 1fr */
     
+    
+  }
+
+  [class*="bar"]:nth-child(even){
+    background:#54b96a;
   }
 
   .Chart{
@@ -64,31 +41,4 @@ body{
     align-items:flex-end;
     word-wrap: break-word;
    
-    
-    
-    
-  }
-  h1{
-  grid-column: 2/span1;
-  }
-
- 
-  .main_nav{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-weight: 700;
-    background-color:#2443d0;
-    grid-column:2/ span 1;
-    font-style: oblique;
-    font-size: 40pt;
-    text-align: center;
-    border-style: double;
-    color:white;
-    width:auto
-  }
-
- 
-
-  [class*="bar"]:nth-child(even){
-    background:#54b96a;
-  }
+}
