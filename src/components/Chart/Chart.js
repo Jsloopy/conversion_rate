@@ -4,14 +4,12 @@ import './Chart.css';
 class Chart extends Component {
     comparisonRate(comparison) {
         let height = 1 / (this.props.rates[comparison]) * 100
-        // console.log(height)
         return height
 
     }
 
     comparisonValues(comparison) {
         let rate = (this.props.rates[comparison])
-        console.log(rate)
         return rate
     }
 

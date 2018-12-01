@@ -35,8 +35,7 @@ class App extends Component {
     const comparisons = this.state.comparisons.concat([ev.target.value])
     this.setState({ comparisons: comparisons });
     console.log(comparisons)
-    // const country = (ev.target.value)
-    // console.log(country)
+    
   }
 
 
@@ -75,15 +74,13 @@ class App extends Component {
 
 
           <Base
-            value={this.state.baseCurrency}
             BaseChange={this.onSubmit.bind(this)}
           />
 
           <nav className="main_nav"> Currency Exchange Rate</nav>
 
           <Country
-            country={this.state.Comparison}
-            Changing={this.countrySelect.bind(this)}
+            onChange={this.countrySelect.bind(this)}
           />
 
 
