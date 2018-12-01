@@ -25,52 +25,11 @@ body{
     
   }
   
-  [class*="bar"]{
-  
-    border-radius: 5px 5px 0 0;
-    background: var(--bg-bar-color);
-    border-style:double;
-    transition: transform 0.5s, filter 0.5s, color 1s ; 
-    text-align: center;
-    flex:1;
-    max-height: 100%;
-    overflow:auto
+ 
 
-    }
-
-  [class*="bar"]:hover{
-    color: white;
-    /* width: 1fr */
-    
-  }
-
-  .Chart{
-    display: flex;
-    grid-column-gap: 10px;
-    height: 80vh;
-    width: 80vw;
-    box-sizing: border-box; 
-    grid-column:2;
-    border-style: double;
-    justify-content: space-between;
-    align-items: end;
-    padding: 50px;
-    background-color: var(--bg-chart-color) ;
-    grid-row:2 / span 1;
-    padding-bottom: 0px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size:auto;
-    font-style: bold;
-    align-items:flex-end;
-    word-wrap: break-word;
-   
-    
-    
-    
-  }
-  h1{
+  /* h1{
   grid-column: 2/span1;
-  }
+  } */
 
  
   .main_nav{
@@ -89,6 +48,4 @@ body{
 
  
 
-  [class*="bar"]:nth-child(even){
-    background:#54b96a;
-  }
+ 
